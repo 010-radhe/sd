@@ -1,0 +1,21 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "build cpp",
+      "type": "shell",
+      "command": "/bin/zsh",
+      "args": [
+        "-c",
+        "mkdir -p \"${workspaceFolder}/build/Debug\" && clang++ -Wall -Wextra -Wpedantic -g3 -O0 \"${file}\" -o \"${workspaceFolder}/build/Debug/outDebug.bin\""
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": [
+        "$gcc"
+      ]
+    }
+  ]
+}
