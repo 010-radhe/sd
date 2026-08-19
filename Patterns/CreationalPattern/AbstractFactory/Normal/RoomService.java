@@ -1,4 +1,4 @@
-public class RoomService {
+class RoomService {
     String style;
     private Chair chair;
     private Table table;

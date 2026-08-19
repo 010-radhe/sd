@@ -2,7 +2,7 @@ public class Normal {
 
     public static void main(String[] args) {
         System.out.println("application started");
-        String style="modern";
+        String style="victorian";
        
         RoomService roomService = new RoomService(style);
         roomService.createRoom();
