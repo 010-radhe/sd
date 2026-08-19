@@ -1,0 +1,22 @@
+{
+    // Disable Cursor AI Tab suggestions (gray inline AI text)
+    "cursor.general.enableTab": false,
+    "editor.inlineSuggest.enabled": false,
+  
+    // Keep normal code completion (IntelliSense popup, snippets like "sout")
+    "editor.quickSuggestions": {
+      "other": "on",
+      "comments": "off",
+      "strings": "on"
+    },
+    "editor.suggestOnTriggerCharacters": true,
+    "editor.wordBasedSuggestions": "matchingDocuments",
+
+    // Run Java compilation from the folder containing the selected source file.
+    "code-runner.fileDirectoryAsCwd": true,
+
+    // Compile all Java files together and keep every .class file in workspace/bin.
+    "code-runner.executorMap": {
+      "java": "mkdir \"$workspaceRoot\\bin\" 2>nul & javac -d \"$workspaceRoot\\bin\" *.java && java -cp \"$workspaceRoot\\bin\" $fileNameWithoutExt"
+    }
+  }
